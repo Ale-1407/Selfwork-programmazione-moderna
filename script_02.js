@@ -18,7 +18,10 @@ const newInfo = (info, listaNomi) => {
 
 console.log(newInfo(info, listaNomi));
 
+export default newInfo;
+
 // La seconda funzione accetta come parametro i contatti di un oggetto (ricordate il destructuring) e restituisce una stringa con l'elenco dei contatti.
 
-const totContatti = ({contatti}) => `I contatti sono ${contatti.join(', ')}`;
+export const totContatti = ({contatti}) => `I contatti sono ${contatti.join(', ')}`;
 console.log(totContatti(info));
+
