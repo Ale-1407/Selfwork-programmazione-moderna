@@ -1,4 +1,6 @@
-/* esportare due funzioni: la prima funzione accetta due parametri (un oggetto e poi una lista di nomi) e 
+/* esportare due funzioni: 
+
+la prima funzione accetta due parametri (un oggetto e poi una lista di nomi) e 
 restituisce lo stesso oggetto ma con una nuova proprietà chiamata contatti che sarà valorizzata con la lista di nomi */
 
 const info = {
@@ -15,3 +17,8 @@ const newInfo = (info, listaNomi) => {
 }
 
 console.log(newInfo(info, listaNomi));
+
+// La seconda funzione accetta come parametro i contatti di un oggetto (ricordate il destructuring) e restituisce una stringa con l'elenco dei contatti.
+
+const totContatti = ({contatti}) => `I contatti sono ${contatti.join(', ')}`;
+console.log(totContatti(info));
